@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fire Forest</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div style="position:relative; ">
+        <div
+            style="position:absolute; display: flex; width: 100%; align-items:center; justify-content:center; top: 1rem; padding:1rem;">
+
+            <div style="position:relative; width: 50%; display: flex; border: 4px solid white;">
+                <div style="background-color: #818cf8; height: 20px; width: 100%; right:0"></div>
+                <div id="playerHealth" style="position:absolute;background:red;top:0; right: 0;bottom: 0;left: 0;"></div>
+            </div>
+        </div>
+
+        <div id="displayText"
+            style="position:absolute; color:white;align-items:center;justify-content:center;top:0;right:0;bottom:0;left:0; display: none; font-size: 4rem;">
+            You Lose
+        </div>
+
+        <div
+            style="position:absolute;display:flex; width: 100%;align-items:center;justify-content: center;top:4rem;padding:1rem;">
+            <div id="timer"
+                style="background-color: black; width: 100px;height: 50px;flex-shrink: 0; display: flex;align-items:center;justify-content:center;color:white;border:4px solid white;">
+                10
+            </div>
+        </div>
+
+        <div
+            style="position:absolute; display:flex;width:100%;align-items:center;justify-content: center;top:4rem;padding:1rem; margin-top: 4rem;">
+            <div id="scoreParent"
+                style="background-color:black;width:200px;height: 50px;flex-shrink: 0;display:flex;align-items:center;justify-content: center; color:white; border: 4px solid white">
+                Score &nbsp; <span id="score">0</span>
+            </div>
+        </div>
+
+        <canvas></canvas>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"
+    integrity="sha512-H6cPm97FAsgIKmlBA4s774vqoN24V5gSQL4yBTDOY2su2DeXZVhQPxFK4P6GPdnZqM9fg1G3cMv5wD7e6cFLZQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="js/utils.js"></script>
+    <script src="js/classes.js"></script>
+    <script src="js/classesEnemy.js"></script>
+    <script src="js/classesPlayer.js"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>
